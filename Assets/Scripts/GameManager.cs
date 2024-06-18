@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator PerSecondScoreGenerate()
+    IEnumerator PerSecondScoreGenerate()    // 매 초 생산 코루틴
     {
         while (true)
         {
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void UpdateUI()
+    public void UpdateUI()  //UI 업데이트
     {
         Score.scoreTxt.text = Score.score.ToString();
         Score.upgradeClickPowerCostTxt.text = $"Cost : {Score.upgradeClickPowerCost}\n Lv. {Score.powerLevel}";

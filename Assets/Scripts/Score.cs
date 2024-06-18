@@ -19,7 +19,7 @@ public class Score : MonoBehaviour
 
 
 
-    public void OnClickPowerUpClick()
+    public void OnClickPowerUpClick()   // 클릭 파워 업 버튼
     {
         if( score >= upgradeClickPowerCost )
         {
@@ -35,7 +35,7 @@ public class Score : MonoBehaviour
         }
     }
 
-    public void OnGeneratePowerUpClick()
+    public void OnGeneratePowerUpClick()    // 초당 생산량 파워 업 버튼
     {
         if (score >= upgradeGeneratePowerCost)
         {
